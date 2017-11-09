@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
       format.html { render :show }
       format.json { render json: render json: @product.to_json(only: [:name, :description, :inventory]) }
     end
-    
+
   end
 
   private
